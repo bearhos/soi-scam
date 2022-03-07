@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[ SOI SCAM ] Hệ thống Kiểm tra, Tố cáo thông tin lừa đảo</title>
+    <link rel="shortcut icon" href="./assets/images/ico.webp">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/resest.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/toast-mesage.css">
+    
+</head>
+<body>
+   <div id="main">
+       <!-- ------- HEADER SECTION ------- -->
+       <header id="header">
+           <div class="header__navbar">
+                <i class="header__menu-icon show-mb fas fa-bars"></i>
+                <div class="header__navbar-item header__logo-wrap">
+                    <a href="./index.html" class="header__logo">
+                        S<i class="header__logo-icon fas fa-search"></i>I SCAM
+                    </a>
+                </div>
+                <div class="header__navbar-item header__search-wrap">
+                    <div class="header__search">
+                        <ion-icon class="header__search-icon" name="search-outline"></ion-icon>
+                        <input type="text" id="search" class="header__search-input" name="seach" placeholder="Kiểm tra số tài khoản ngân hàng">
+                        <ion-icon class="header__search-remove" name="close-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="header__navbar-item header__btn-report-wrap">
+                    <a href="./page/report-scam.html">
+                        <button class="btn header__btn-report">
+                            Gửi Tố Cáo
+                        </button>
+                    </a>
+                </div>
+           </div>
+       </header>
+
+        <!-- ------- HEADER SECTION ------- -->
+       <div id="container">
+           <!-- Menu -->
+           <div class="container__menu">
+                <a href="./index.html" class="container__menu-logo header__logo show-mb">
+                    S<i class="header__logo-icon fas fa-search"></i>I SCAM
+                </a>
+                <a href="./index.html" class="container__menu-item actived">
+                    <i class="container__item-icon actived fas fa-home"></i>
+                    Home
+                </a>
+                <a href="./page/introduce.html" class="container__menu-item">
+                    <i class="container__item-icon fas fa-address-card"></i>
+                    Giới Thiệu
+                </a>
+                <a href="./page/rules.html" class="container__menu-item">
+                    <i class="container__item-icon fas fa-edit"></i>
+                    Điều Khoản
+                </a>
+                <a href="./page/report-scam.html" class="container__menu-item">
+                    <i class="container__item-icon fas fa-user-edit"></i>
+                    Tố Cáo
+                </a>
+           </div>
+           <div class="container__content">
+            <div id="toast"></div>
+                <h1 id="content-heading" class="container__content-heading">
+                   KIỂM TRA & TỐ CÁO SCAMMER
+                </h1>
+                <p>
+                   Website lưu trữ <strong>dữ liệu lừa đảo</strong> trên mxh mà không chịu bất kỳ hạn chế seach của một thuật toán nào trên Facebook
+                </p>
+                <p>
+                    Là nơi lưu trữ <strong>bằng chứng lừa đảo</strong>, cung cấp góp phần nào thúc đẩy quá trình thu thập dữ liệu phục vụ cho công tác điều tra của “Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao”
+                </p>
+
+                <div class="container__content-option">
+                    <a href="./page/report-scam.html">
+                        <button class="btn container__content-option-btn">
+                            Gửi Tố Cáo Scam
+                        </button>
+                    </a>
+                    <a href="./page/dich-vu-uy-tin.html">
+                        <button class="btn container__content-option-btn blue">
+                            Những Dịch Vụ Uy Tín
+                        </button>
+                    </a>
+                </div>
+                <img class="container__content-img" src="./assets/images/background-2.jpg" alt="">
+              
+                <!-- Scammer List -->
+                <h1 class="container__content-heading">
+                    DANH SÁCH SCAM BỊ TỐ CÁO
+                 </h1>
+                <div class="scammer-list">
+                    <div class="scammer-list__loader"></div>
+                </div>
+            </div>
+       </div>
+       <a href="#content-heading" class="btn-goup">
+            <i class="fas fa-angle-up"></i>
+       </a>
+   </div> 
+   <script src="./assets/js/main.js"></script>
+   <script src="./assets/js/app.js"></script>
+   <script src="./assets/js/toast.js"></script>
+   <script src="../assets/js/report.js"></script>
+   
+
+   
+</body>
+</html>

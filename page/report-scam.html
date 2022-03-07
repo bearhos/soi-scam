@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[ SOI SCAM ] Hệ thống Kiểm tra, Tố cáo thông tin lừa đảo</title>
+    <link rel="shortcut icon" href="../assets/images/ico.webp">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="../assets/css/resest.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/toast-mesage.css">
+    <link rel="stylesheet" href="../assets/css/report.css">
+</head>
+<body>
+   <div id="main">
+       <!-- ------- HEADER SECTION ------- -->
+       <header id="header">
+           <div class="header__navbar">
+                <i class="header__menu-icon show-mb fas fa-bars"></i>
+                <div class="header__navbar-item ">
+                    <a href="../index.html" class="header__logo">
+                        S<i class="header__logo-icon fas fa-search"></i>I SCAM
+                    </a>
+                </div>
+                <div class="header__navbar-item header__btn-report-wrap">
+                    <a href="./report-scam.html">
+                        <button class="btn header__btn-report">
+                            Gửi Tố Cáo
+                        </button>
+                    </a>
+                </div>
+           </div>
+       </header>
+
+        <!-- ------- HEADER SECTION ------- -->
+       <div id="container">
+           <!-- Menu -->
+           <div class="container__menu">
+                <a href="./index.html" class="container__menu-logo header__logo show-mb">
+                    S<i class="header__logo-icon fas fa-search"></i>I SCAM
+                </a>
+                <a href="../index.html" class="container__menu-item ">
+                    <i class="container__item-icon fas fa-home"></i>
+                    Home
+                </a>
+                <a href="./introduce.html" class="container__menu-item">
+                    <i class="container__item-icon fas fa-address-card"></i>
+                    Giới Thiệu
+                </a>
+                <a href="./rules.html" class="container__menu-item">
+                    <i class="container__item-icon fas fa-edit"></i>
+                    Điều Khoản
+                </a>
+                <a href="./report-scam.html" class="container__menu-item actived">
+                    <i class="container__item-icon actived fas fa-user-edit"></i>
+                    Tố Cáo
+                </a>
+           </div>
+           <div class="container__content">
+                <form action="" class="form-post" method="post">
+                    <div id="toast"></div>
+                    <h1 class="container__content-heading">
+                        THÔNG TIN KẺ LỪA ĐẢO
+                     </h1>
+                    <div class="form-item-wrap">
+                        <div class="form-item">
+                            <label for="accountHolder" class="form-item__title">
+                                <i class="fas fa-user"></i>
+                                Chủ tài khoản <span class="attention">*</span>
+                            </label>
+                            <input type="text" id="accountHolder" name="accountHolder">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-item">
+                            <label for="phoneNumber" class="form-item__title">
+                                <i class="fas fa-phone"></i>
+                                Số điện thoại
+                            </label>
+                            <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="phoneNumber" name="phoneNumber">
+                        </div>
+                        <div class="form-item">
+                            <label for="accountNumber" class="form-item__title">
+                                <i class="far fa-credit-card"></i>
+                                Số tài khoản <span class="attention">*</span>
+                            </label>
+                            <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="accountNumber" name="accountNumber">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-item">
+                            <label for="bank" class="form-item__title">
+                                <i class="fas fa-university"></i>
+                                Ngân hàng <span class="attention">*</span>
+                            </label>
+                            <input type="text" id="bank" name="bank">
+                            <span class="form-message"></span>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label for="image" class="form-item__title">
+                            <i class="fas fa-link"></i>
+                            Thêm link ảnh bằng chứng
+                        </label>
+                        <input type="text" id="image" name="image">
+                    </div>
+                    <p class="form-item_attention">
+                        Ví dụ: Bill chuyển tiền, Ảnh đoạn chát...
+                    </p>
+                    <div class="form-item">
+                        <label class="title-content" for="content">
+                            Nội dung tố cáo <span class="attention">*</span>
+                        </label>
+                        <textarea name="content" id="content" rows="5"></textarea>
+                        <span class="form-message"></span>
+                    </div>
+                    <h1 class="container__content-heading">
+                        NGƯỜI XÁC THỰC
+                     </h1>
+                    <div class="form-item-wrap">
+                        <div class="form-item">
+                            <label for="authorName" class="form-item__title">
+                                <i class="fas fa-user"></i>
+                                Họ Và Tên <span class="attention">*</span>
+                            </label>
+                            <input type="text" id="authorName" name="authorName">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-item">
+                            <label for="authorPhone" class="form-item__title">
+                                <i class="fas fa-phone"></i>
+                                Liên hệ (zalo - sđt) <span class="attention">*</span>
+                            </label>
+                            <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="authorPhone" name="authorPhone">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-item">
+                            <label for="abc2" class="form-item__title">
+                                <i class="fas fa-phone"></i>
+                                abc <span class="attention">*</span>
+                            </label>
+                            <input type="text" id="abc2" name="ab2c">
+                        </div>
+                    </div>
+                    <div class="form-item border-none">
+                        <div class="form-item__action">
+                            <input type="radio" name="option" value="Nạn nhân" class="radio-input" id="radio-1" checked >
+                            <label for="radio-1" class="radio-label"></label>
+                            <label for="radio-1">Tôi chính là nạn nhân</label>
+                        </div>
+                        <div class="form-item__action">
+                            <input type="radio" name="option" value="Đăng hộ" class="radio-input"  id="radio-2">
+                            <label for="radio-2" class="radio-label"></label>
+                            <label for="radio-2">Phốt này trên group tôi chỉ đăng hộ</label>
+                        </div>
+                    </div>
+                    <button class="btn btn-submit">
+                        <div class="loader"></div>
+                        <span> Đăng </span>
+                    </button>
+                </form>
+            </div>  
+       </div>
+   </div> 
+   <!-- JS -->
+   <script src="../assets/js/validation.js"></script>
+   <script src="../assets/js/toast.js"></script>
+   <script src="../assets/js/main.js"></script>
+   <script src="../assets/js/report.js"></script>
+
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "109329201657523");
+    chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+        xfbml            : true,
+        version          : 'v12.0'
+        });
+    };
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
+</body>
+</html>

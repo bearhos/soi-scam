@@ -1,0 +1,108 @@
+.container__content-item{
+    text-align: left;
+}
+
+.container__content-sub-heading{
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 32px 0 24px;
+}
+
+.container__content-item-body{
+    text-align: justify;
+
+}
+
+.container__content-title{
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+
+.container__content-text{
+    display: flex;
+    margin: 16px 12px;
+    align-items: center;
+}
+
+
+.container__content-sub-text a,
+.container__content-text a{
+    display: inline;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.container__content-sub-text a:hover,
+.container__content-text a:hover{
+    text-decoration: underline;
+}
+
+.container__content-text i{
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    width: 16px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.container__content-text span{
+    flex: 1;
+    line-height: 1.5;
+}
+
+.container__content-sub-text{
+    margin-left: 50px;
+    margin-bottom: 16px;
+}
+
+.container__content-sub-text i{
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    margin-right: 4px;
+}
+
+
+/* Responsive */
+/* Mobile & tablet: width <1024px */
+@media only screen and (max-width: 63.9375em){
+
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+
+}
+
+/* Mobie: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    .container__content-sub-heading{
+        font-size: 1.8rem;
+        line-height: 1.4;
+        margin: 0 0 20px;
+    }
+    .container__content-title{
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+
+    .container__content-sub-text span,
+    .container__content-text span{
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+
+    .container__content-sub-text{
+        margin-left: 40px;
+    }
+}
+
+/* PC Low */
+@media (min-width: 1024px) and (max-width: 1239px) { 
+
+}
+
+/* PC: width >= 1024px */
+@media only screen and (min-width: 64em) {
+
+}
